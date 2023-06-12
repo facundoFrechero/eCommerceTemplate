@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css"/>
+    <script src="../components/header.js"></script>
+    <script src="../components/footer.js"></script>
+    <script src="../components/newsletter.js"></script>
+    <title>Productos</title>
+</head>
+
+<body>
+    <header-component></header-component>
+
+    <section id="pro-details" class="section-p1">
+        <div class="single-pro-image">
+            <img src="../img/products/f1.jpg" width="100%" id="main-image" alt="">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="../img/products/f1.jpg" width="100%" class="small-image" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/products/f2.jpg" width="100%" class="small-image" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/products/f3.jpg" width="100%" class="small-image" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/products/f4.jpg" width="100%" class="small-image" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Inicio / Remera</h6>
+            <h4>Remeras Hombre de Moda</h4>
+            <h2>$139.00</h2>
+            <select>
+                <option>Seleccionar Tamaño</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+            <input type="number" value="1" min="1">
+            <button class="normal">Add to Cart</button>
+            <h4>Product Details</h4>
+            <span>La camisa Gildan Ultra Algodon está hecha de una sustancial 6.0 onzas por yarda cuadrada Fabricado con 100 % algodón, este tejido de punto preencogido de ajuste clásico proporciona una comodidad inigualable con cada uso. Con un cuello y hombros sellados, y un cuello de doble aguja sin costuras, y disponible en una gama de colores, lo ofrece todo en el paquete definitivo que llama la atención.
+            </span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Productos Destacados</h2>
+        <p>Diseños Modernos / Colección Verano</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="../img/products/n1.jpg" alt="">
+                <div class="description">
+                    <span>Adidas</span>
+                    <h5>Camisa Floreada</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="../img/products/n2.jpg" alt="">
+                <div class="description">
+                    <span>Adidas</span>
+                    <h5>Camisa Floreada</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="../img/products/n3.jpg" alt="">
+                <div class="description">
+                    <span>Adidas</span>
+                    <h5>Camisa Floreada</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="../img/products/n4.jpg" alt="">
+                <div class="description">
+                    <span>Adidas</span>
+                    <h5>Camisa Floreada</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <newsletter-component></newsletter-component>
+
+    <footer-component></footer-component>
+
+
+
+    <script>
+        var mainImg = document.getElementById("main-image");
+        var smallImg = document.getElementsByClassName("small-image");
+
+        smallImg[0].onclick = function() {
+            mainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function() {
+            mainImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function() {
+            mainImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function() {
+            mainImg.src = smallImg[3].src;
+        }
+    </script>
+
+</body>
+</html>

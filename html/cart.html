@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css"/>
+    <script src="../components/header.js"></script>
+    <script src="../components/footer.js"></script>
+    <script src="../components/feature.js"></script>
+    <script src="../components/newsletter.js"></script>
+    <title>Carrito de Compras</title>
+</head>
+
+<body>
+    <header-component></header-component>
+
+    <section id="page-header" class="cart-header">
+        <h2>#Carrito</h2>
+        <p>Añadí tu cupón y conseguí hasta un <strong>70% DE DESCUENTO!</strong></p>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Borrar</td>
+                    <td>Imagen</td>
+                    <td>Producto</td>
+                    <td>Precio</td>
+                    <td>Cantidad</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa fa-times-circle"></i></a></td>
+                    <td><img src="../img/products/f1.jpg" alt=""></td>
+                    <td>Camisa Floreada</td>
+                    <td>$1180</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$1180</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa fa-times-circle"></i></a></td>
+                    <td><img src="../img/products/f2.jpg" alt=""></td>
+                    <td>Camisa Floreada<</td>
+                    <td>$1180</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$1180</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa fa-times-circle"></i></a></td>
+                    <td><img src="../img/products/f3.jpg" alt=""></td>
+                    <td>Camisa Floreada<</td>
+                    <td>$1180</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$1180</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Añadir Cupón</h3>
+            <div>
+                <input type="text" placeholder="Introducí tu cupón de descuento">
+                <button class="normal">Aplicar</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Total del Carrito</h3>
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$3540</td>
+                </tr>
+                <tr>
+                    <td>Envío</td>
+                    <td>Gratis</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$3540</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Pagar</button>
+        </div>
+    </section>
+
+    <footer-component></footer-component>
+</body>
+</html>
