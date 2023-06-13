@@ -24,7 +24,7 @@ class Feature extends HTMLElement {
         </div>
         <div class="fe-box">
             <img src="../../img/features/f5.png" alt="">
-            <h6>Atención Agradable</h6>
+            <h6>Buena Atención</h6>
         </div>
         <div class="fe-box">
             <img src="../../img/features/f6.png" alt="">

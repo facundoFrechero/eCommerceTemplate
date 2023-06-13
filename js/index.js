@@ -1,25 +1,23 @@
-const bar = document.getElementById('bar');
-const navLinkEls = document.querySelectorAll('nav__link');
+const bar = document.querySelector('#bar');
+const navBar = document.getElementById('navbar')
 const close = document.getElementById('close');
+const activePage = window.location.pathname;
 
-if (bar) {
-    bar.addEventListener('click', () => {
-        this.classList.add('active') 
-    })
-}
-
-navLinkEls.forEach(navLinkEl => {
-    navLinkEl.addEventListener('click', function() {
-        document.querySelector('.active')?.classList.remove('active');
-        this.classList.add('active');
-        console.log('ouch');    
-    }, { passive: !ns.includes("noPreventDefault") })
+bar.addEventListener('click', () => {
+    bar.classList.toggle("active");
+    navBar.classList.toggle("active");
 });
 
 if (close) {
     close.addEventListener('click', () => {
-        nav.classList.remove('active')
+        navBar.classList.remove('active')
     })
 }
+
+const navLinks = document.querySelectorAll('ul a').forEach(link => {
+    if(link.href.includes(`${activePage}`)) {
+        link.classList.add('active');
+    }
+})
 
 

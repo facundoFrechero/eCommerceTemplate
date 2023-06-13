@@ -41,7 +41,7 @@ class Footer extends HTMLElement {
             <div class="col install">
                 <h4>Instalar App</h4>
                 <p>Desde la App Store o Google Play</p>
-                <div class="row">
+                <div class="row logos">
                     <img src="../../img/pay/app.jpg" alt="">
                     <img src="../../img/pay/play.jpg" alt="">
                 </div>
