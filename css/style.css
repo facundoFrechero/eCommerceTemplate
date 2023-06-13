@@ -1163,7 +1163,9 @@ footer .copyright {
     /* Home */
     #hero {
         padding: 0 20px;
-        background-position: 60%;
+        background-position: 0% 0%;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     #feature {
